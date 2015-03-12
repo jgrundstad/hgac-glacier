@@ -1,7 +1,7 @@
-# hgac-glacier
+## hgac-glacier
 scripts for backing up HGAC run directories to glacier
 ___
-## Process for backing up HGAC run directoyr
+### Process for backing up HGAC run directory
 1. Create a compressed tape archive of the Illumina run directory:
 
     `tar czvf run_directory.tar.gz run_directory`
@@ -38,7 +38,7 @@ optional arguments:
   -c ACCOUNT_ID, --aws-account-id ACCOUNT_ID
 ```
 ___
-## Check jobs status for a vault
+### Check jobs status for a vault
 ```bash
 $ python check_jobs_status.py -V <vault_name> -a AWS_ACCESS_KEY -s AWS_SECRET_KEY -c AWS_ACCOUNT_ID
 [
